@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dev-ansh-r/lorawan"
+	"github.com/brocaar/lorawan"
 
 	"github.com/dev-ansh-r/loraserver/internal/common"
 	"github.com/dev-ansh-r/loraserver/internal/config"

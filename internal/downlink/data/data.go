@@ -9,6 +9,8 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/band"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/internal/adr"
 	"github.com/dev-ansh-r/loraserver/internal/channels"
@@ -18,8 +20,6 @@ import (
 	"github.com/dev-ansh-r/loraserver/internal/maccommand"
 	"github.com/dev-ansh-r/loraserver/internal/models"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/band"
 )
 
 type deviceClass int

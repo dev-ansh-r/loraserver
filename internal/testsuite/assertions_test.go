@@ -5,11 +5,11 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/require"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/backend"
 	"github.com/dev-ansh-r/loraserver/api/as"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/backend"
 )
 
 var lastToken uint32

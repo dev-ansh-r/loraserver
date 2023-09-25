@@ -16,10 +16,10 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/band"
 	commonPB "github.com/dev-ansh-r/loraserver/api/common"
 	"github.com/dev-ansh-r/loraserver/internal/config"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/band"
 )
 
 const (
@@ -291,14 +291,26 @@ func GetRandomDevAddr(p *redis.Pool, netID lorawan.NetID) (lorawan.DevAddr, erro
 // to validate the MIC, the full 32 bit frame-counter needs to be set.
 // After a succesful validation of the FCntUp and the MIC, don't forget
 // to synchronize the Node FCntUp with the packet FCnt.
-func ValidateAndGetFullFCntUp(s DeviceSession, fCntUp uint32) (uint32, bool) {
-	// we need to compare the difference of the 16 LSB
-	gap := uint32(uint16(fCntUp) - uint16(s.FCntUp%65536))
-	if gap < config.C.NetworkServer.Band.Band.GetDefaults().MaxFCntGap {
-		return s.FCntUp + gap, true
-	}
-	return 0, false
-}
+// func ValidateAndGetFullFCntUp(s DeviceSession, fCntUp uint32) (uint32, bool) {
+// 	// we need to compare the difference of the 16 LSB
+// 	gap := uint32(uint16(fCntUp) - uint16(s.FCntUp%65536))
+// 	if gap < config.C.NetworkServer.Band.Band.MaxFCntGap{
+// 		return s.FCntUp + gap, true
+// 	}
+// 	return 0, false
+// }
+
+// func GetFullFCntUp(nextExpectedFullFCnt, truncatedFCntUp uint32) uint32 {
+// 	// Handle re-transmission.
+// 	// Note: the s.FCntUp value holds the next expected uplink frame-counter,
+// 	// therefore this function returns sFCntUp - 1 in case of a re-transmission.
+// 	if truncatedFCntUp == uint32(uint16(nextExpectedFullFCnt%(1<<16))-1) {
+// 		return nextExpectedFullFCnt - 1
+// 	}
+// 	gap := uint32(uint16(truncatedFCntUp) - uint16(nextExpectedFullFCnt%(1<<16)))
+// 	return nextExpectedFullFCnt + gap
+// }
+
 
 // SaveDeviceSession saves the device-session. In case it doesn't exist yet
 // it will be created.
@@ -792,7 +804,7 @@ func deviceSessionFromPB(d DeviceSessionPB) DeviceSession {
 
 	for i, c := range d.ExtraUplinkChannels {
 		out.ExtraUplinkChannels[int(i)] = band.Channel{
-			Frequency: int(c.Frequency),
+			Frequency: uint32(c.Frequency),
 			MinDR:     int(c.MinDr),
 			MaxDR:     int(c.MaxDr),
 		}

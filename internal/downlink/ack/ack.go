@@ -1,7 +1,7 @@
 package ack
 
 import (
-	"github.com/dev-ansh-r/lorawan"
+	"github.com/brocaar/lorawan"
 	"github.com/pkg/errors"
 
 	"github.com/dev-ansh-r/loraserver/api/gw"

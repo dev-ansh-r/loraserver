@@ -17,11 +17,11 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/internal/backend"
 	"github.com/dev-ansh-r/loraserver/internal/backend/gateway/marshaler"
 	"github.com/dev-ansh-r/loraserver/internal/helpers"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 const uplinkLockTTL = time.Millisecond * 500

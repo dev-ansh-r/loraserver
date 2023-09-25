@@ -11,13 +11,13 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/ns"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/downlink/data/classb"
 	"github.com/dev-ansh-r/loraserver/internal/gps"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
 	"github.com/dev-ansh-r/loraserver/internal/test"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 type NetworkServerAPITestSuite struct {

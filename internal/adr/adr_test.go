@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/internal/common"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
 	"github.com/dev-ansh-r/loraserver/internal/test"
-	"github.com/dev-ansh-r/lorawan"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

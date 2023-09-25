@@ -3,8 +3,8 @@ package maccommand
 import (
 	"fmt"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
 	log "github.com/sirupsen/logrus"
 )
 

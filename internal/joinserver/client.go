@@ -12,7 +12,7 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/dev-ansh-r/lorawan/backend"
+	"github.com/brocaar/lorawan/backend"
 )
 
 // Client defines the join-server client interface.

@@ -8,6 +8,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/downlink/ack"
@@ -18,7 +19,6 @@ import (
 	"github.com/dev-ansh-r/loraserver/internal/uplink/join"
 	"github.com/dev-ansh-r/loraserver/internal/uplink/proprietary"
 	"github.com/dev-ansh-r/loraserver/internal/uplink/rejoin"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 // Server represents a server listening for uplink packets.

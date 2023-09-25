@@ -3,10 +3,10 @@ package storage
 import (
 	"time"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/band"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/models"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/band"
 	"github.com/gofrs/uuid"
 )
 
@@ -150,7 +150,7 @@ func migrateDeviceSessionOld(d DeviceSessionOld) DeviceSession {
 	}
 
 	if out.RX2Frequency == 0 {
-		out.RX2Frequency = config.C.NetworkServer.Band.Band.GetDefaults().RX2Frequency
+		out.RX2Frequency = int(config.C.NetworkServer.Band.Band.GetDefaults().RX2Frequency)
 	}
 
 	return out

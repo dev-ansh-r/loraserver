@@ -3,10 +3,10 @@ package maccommand
 import (
 	"fmt"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/as"
 	"github.com/dev-ansh-r/loraserver/internal/models"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 // Handle handles a MACCommand sent by a node.

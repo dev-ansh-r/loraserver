@@ -7,9 +7,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/as"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 // RequestDevStatus returns a mac-command block for requesting the device-status.

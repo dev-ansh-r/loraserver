@@ -1,9 +1,9 @@
 package channels
 
 import (
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 // HandleChannelReconfigure handles the reconfiguration of active channels

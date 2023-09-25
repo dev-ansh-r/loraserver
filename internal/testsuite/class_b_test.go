@@ -8,13 +8,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/gps"
 	"github.com/dev-ansh-r/loraserver/internal/helpers"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
 	"github.com/dev-ansh-r/loraserver/internal/uplink"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 type ClassBTestSuite struct {

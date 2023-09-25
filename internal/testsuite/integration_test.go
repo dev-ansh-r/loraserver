@@ -9,6 +9,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/backend"
+	"github.com/brocaar/lorawan/band"
 	commonPB "github.com/dev-ansh-r/loraserver/api/common"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/api/ns"
@@ -19,9 +22,6 @@ import (
 	"github.com/dev-ansh-r/loraserver/internal/storage"
 	"github.com/dev-ansh-r/loraserver/internal/test"
 	"github.com/dev-ansh-r/loraserver/internal/uplink"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/backend"
-	"github.com/dev-ansh-r/lorawan/band"
 )
 
 // Assertion provides the interface for test assertions.

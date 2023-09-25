@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/dev-ansh-r/lorawan"
+	"github.com/brocaar/lorawan"
 )
 
 func (ts *StorageTestSuite) TestGateway() {

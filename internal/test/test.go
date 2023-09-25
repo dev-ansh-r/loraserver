@@ -12,6 +12,9 @@ import (
 	context "golang.org/x/net/context"
 	"google.golang.org/grpc"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/backend"
+	"github.com/brocaar/lorawan/band"
 	"github.com/dev-ansh-r/loraserver/api/as"
 	"github.com/dev-ansh-r/loraserver/api/geo"
 	"github.com/dev-ansh-r/loraserver/api/gw"
@@ -20,10 +23,7 @@ import (
 	"github.com/dev-ansh-r/loraserver/internal/common"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/joinserver"
-	"github.com/dev-ansh-r/loraserver/internal/migrations"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/backend"
-	"github.com/dev-ansh-r/lorawan/band"
+	"github.com/dev-ansh-r/loraserver/internal/migrations/code"
 )
 
 func init() {

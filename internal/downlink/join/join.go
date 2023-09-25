@@ -8,13 +8,13 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/framelog"
 	"github.com/dev-ansh-r/loraserver/internal/helpers"
 	"github.com/dev-ansh-r/loraserver/internal/models"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 var tasks = []func(*joinContext) error{

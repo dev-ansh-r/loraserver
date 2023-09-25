@@ -21,6 +21,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/band"
 	"github.com/dev-ansh-r/loraserver/api/geo"
 	"github.com/dev-ansh-r/loraserver/api/nc"
 	"github.com/dev-ansh-r/loraserver/api/ns"
@@ -35,12 +37,9 @@ import (
 	"github.com/dev-ansh-r/loraserver/internal/downlink"
 	"github.com/dev-ansh-r/loraserver/internal/gateway"
 	"github.com/dev-ansh-r/loraserver/internal/joinserver"
-	"github.com/dev-ansh-r/loraserver/internal/migrations"
 	"github.com/dev-ansh-r/loraserver/internal/migrations/code"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
 	"github.com/dev-ansh-r/loraserver/internal/uplink"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/band"
 )
 
 func run(cmd *cobra.Command, args []string) error {

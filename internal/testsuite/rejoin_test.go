@@ -4,14 +4,14 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/backend"
+	"github.com/brocaar/lorawan/band"
 	commonPB "github.com/dev-ansh-r/loraserver/api/common"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/helpers"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/backend"
-	"github.com/dev-ansh-r/lorawan/band"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 )

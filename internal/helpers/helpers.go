@@ -3,11 +3,11 @@ package helpers
 import (
 	"fmt"
 
-	"github.com/dev-ansh-r/lorawan"
+	"github.com/brocaar/lorawan"
 
+	"github.com/brocaar/lorawan/band"
 	"github.com/dev-ansh-r/loraserver/api/common"
 	"github.com/dev-ansh-r/loraserver/api/gw"
-	"github.com/dev-ansh-r/lorawan/band"
 	"github.com/pkg/errors"
 )
 

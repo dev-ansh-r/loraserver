@@ -8,9 +8,9 @@ import (
 	keywrap "github.com/NickBall/go-aes-key-wrap"
 	"github.com/pkg/errors"
 
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/backend"
 	"github.com/dev-ansh-r/loraserver/internal/config"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/backend"
 )
 
 // unwrapNSKeyEnveope returns the decrypted key from the given KeyEnvelope.

@@ -10,7 +10,7 @@ import (
 	"github.com/spf13/viper"
 
 	"github.com/dev-ansh-r/loraserver/internal/config"
-	"github.com/dev-ansh-r/lorawan/band"
+	"github.com/brocaar/lorawan/band"
 )
 
 var cfgFile string

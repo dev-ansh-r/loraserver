@@ -5,7 +5,7 @@ import (
 
 	"github.com/dev-ansh-r/loraserver/api/common"
 	"github.com/dev-ansh-r/loraserver/api/gw"
-	"github.com/dev-ansh-r/lorawan/band"
+	"github.com/brocaar/lorawan/band"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"

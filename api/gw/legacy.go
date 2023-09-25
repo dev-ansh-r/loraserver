@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/band"
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/band"
 )
 
 // RXPacket contains the PHYPayload received from the gateway.

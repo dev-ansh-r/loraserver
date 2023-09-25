@@ -8,6 +8,7 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/as"
 	"github.com/dev-ansh-r/loraserver/api/common"
 	"github.com/dev-ansh-r/loraserver/api/geo"
@@ -21,7 +22,6 @@ import (
 	"github.com/dev-ansh-r/loraserver/internal/maccommand"
 	"github.com/dev-ansh-r/loraserver/internal/models"
 	"github.com/dev-ansh-r/loraserver/internal/storage"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 const applicationClientTimeout = time.Second

@@ -13,8 +13,8 @@ import (
 	"github.com/dev-ansh-r/loraserver/internal/backend/gateway/mqtt"
 	"github.com/dev-ansh-r/loraserver/internal/common"
 	"github.com/dev-ansh-r/loraserver/internal/joinserver"
-	"github.com/dev-ansh-r/lorawan"
-	"github.com/dev-ansh-r/lorawan/band"
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/band"
 )
 
 // Version defines the LoRa Server version.

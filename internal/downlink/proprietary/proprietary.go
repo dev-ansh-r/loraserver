@@ -6,11 +6,11 @@ import (
 
 	"github.com/pkg/errors"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/common"
 	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/helpers"
-	"github.com/dev-ansh-r/lorawan"
 )
 
 const defaultCodeRate = "4/5"
@@ -65,7 +65,7 @@ func sendProprietaryDown(ctx *proprietaryContext) error {
 	if config.C.NetworkServer.NetworkSettings.DownlinkTXPower != -1 {
 		txPower = config.C.NetworkServer.NetworkSettings.DownlinkTXPower
 	} else {
-		txPower = config.C.NetworkServer.Band.Band.GetDownlinkTXPower(ctx.Frequency)
+		txPower = config.C.NetworkServer.Band.Band.GetDownlinkTXPower(uint32(ctx.Frequency))
 	}
 
 	phy := lorawan.PHYPayload{

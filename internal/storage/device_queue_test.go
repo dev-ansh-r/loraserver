@@ -7,12 +7,12 @@ import (
 
 	"github.com/pkg/errors"
 
+	"github.com/brocaar/lorawan"
 	"github.com/dev-ansh-r/loraserver/api/as"
 	"github.com/dev-ansh-r/loraserver/internal/common"
 	"github.com/dev-ansh-r/loraserver/internal/config"
 	"github.com/dev-ansh-r/loraserver/internal/gps"
 	"github.com/dev-ansh-r/loraserver/internal/test"
-	"github.com/dev-ansh-r/lorawan"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
