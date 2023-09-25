@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/brocaar/lorawan/band"
+	"github.com/dev-ansh-r/lorawan/band"
 
-	"github.com/brocaar/loraserver/internal/storage"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
+	"github.com/dev-ansh-r/lorawan"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
@@ -64,12 +64,12 @@ func TestReset(t *testing.T) {
 					},
 				},
 				ExpectedDeviceSession: storage.DeviceSession{
-					RXDelay:      1,
-					RX1DROffset:  0,
-					RX2DR:        0,
-					RX2Frequency: 868300000,
-					TXPowerIndex: 0,
-					DR:           0,
+					RXDelay:                  1,
+					RX1DROffset:              0,
+					RX2DR:                    0,
+					RX2Frequency:             868300000,
+					TXPowerIndex:             0,
+					DR:                       0,
 					MinSupportedTXPowerIndex: 0,
 					MaxSupportedTXPowerIndex: 0,
 					MaxSupportedDR:           0,

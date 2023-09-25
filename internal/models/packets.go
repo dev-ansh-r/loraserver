@@ -3,8 +3,8 @@ package models
 import (
 	"time"
 
-	"github.com/brocaar/loraserver/api/gw"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/api/gw"
+	"github.com/dev-ansh-r/lorawan"
 )
 
 // maxSNRForSort defines the maximum SNR on which to sort. When both values

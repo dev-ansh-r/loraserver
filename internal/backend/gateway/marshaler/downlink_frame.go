@@ -3,10 +3,10 @@ package marshaler
 import (
 	"encoding/json"
 
-	"github.com/brocaar/lorawan/band"
+	"github.com/dev-ansh-r/lorawan/band"
 
-	"github.com/brocaar/loraserver/api/common"
-	"github.com/brocaar/loraserver/api/gw"
+	"github.com/dev-ansh-r/loraserver/api/common"
+	"github.com/dev-ansh-r/loraserver/api/gw"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"

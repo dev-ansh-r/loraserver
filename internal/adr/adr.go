@@ -6,9 +6,9 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/loraserver/internal/storage"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
+	"github.com/dev-ansh-r/lorawan"
 )
 
 var pktLossRateTable = [][3]uint8{

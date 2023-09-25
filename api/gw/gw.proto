@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package gw;
 
-option go_package = "github.com/brocaar/loraserver/api/gw";
+option go_package = "github.com/dev-ansh-r/loraserver/api/gw";
 
-import "github.com/brocaar/loraserver/api/common/common.proto";
+import "github.com/dev-ansh-r/loraserver/api/common/common.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
 

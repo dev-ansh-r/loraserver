@@ -6,7 +6,7 @@ import (
 	"github.com/gofrs/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/lorawan"
 )
 
 func (ts *StorageTestSuite) TestDeviceMulticastGroup() {

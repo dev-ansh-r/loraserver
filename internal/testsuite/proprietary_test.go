@@ -5,12 +5,12 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/brocaar/loraserver/api/as"
-	commonPB "github.com/brocaar/loraserver/api/common"
-	"github.com/brocaar/loraserver/api/gw"
-	"github.com/brocaar/loraserver/api/ns"
-	"github.com/brocaar/loraserver/internal/storage"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/api/as"
+	commonPB "github.com/dev-ansh-r/loraserver/api/common"
+	"github.com/dev-ansh-r/loraserver/api/gw"
+	"github.com/dev-ansh-r/loraserver/api/ns"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
+	"github.com/dev-ansh-r/lorawan"
 )
 
 type ProprietaryTestCase struct {

@@ -8,7 +8,7 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 
-	"github.com/brocaar/loraserver/api/gw"
+	"github.com/dev-ansh-r/loraserver/api/gw"
 )
 
 // UnmarshalDownlinkTXAck unmarshals a DownlinkTXAck.

@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/lorawan"
 
-	"github.com/brocaar/loraserver/internal/common"
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/loraserver/internal/gps"
-	"github.com/brocaar/loraserver/internal/storage"
-	"github.com/brocaar/loraserver/internal/test"
+	"github.com/dev-ansh-r/loraserver/internal/common"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/gps"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
+	"github.com/dev-ansh-r/loraserver/internal/test"
 
 	. "github.com/smartystreets/goconvey/convey"
 )
@@ -76,33 +76,33 @@ func TestGetNextPingSlotAfter(t *testing.T) {
 		ExpectedError            error
 	}{
 		{
-			After:   0,
-			DevAddr: lorawan.DevAddr{},
-			PingNb:  1,
+			After:                    0,
+			DevAddr:                  lorawan.DevAddr{},
+			PingNb:                   1,
 			ExpectedGPSEpochDuration: "1m14.3s",
 		},
 		{
-			After:   2 * time.Minute,
-			DevAddr: lorawan.DevAddr{},
-			PingNb:  1,
+			After:                    2 * time.Minute,
+			DevAddr:                  lorawan.DevAddr{},
+			PingNb:                   1,
 			ExpectedGPSEpochDuration: "3m5.62s",
 		},
 		{
-			After:   0,
-			DevAddr: lorawan.DevAddr{},
-			PingNb:  2,
+			After:                    0,
+			DevAddr:                  lorawan.DevAddr{},
+			PingNb:                   2,
 			ExpectedGPSEpochDuration: "12.86s",
 		},
 		{
-			After:   13 * time.Second,
-			DevAddr: lorawan.DevAddr{},
-			PingNb:  2,
+			After:                    13 * time.Second,
+			DevAddr:                  lorawan.DevAddr{},
+			PingNb:                   2,
 			ExpectedGPSEpochDuration: "1m14.3s",
 		},
 		{
-			After:   124 * time.Second,
-			DevAddr: lorawan.DevAddr{},
-			PingNb:  128,
+			After:                    124 * time.Second,
+			DevAddr:                  lorawan.DevAddr{},
+			PingNb:                   128,
 			ExpectedGPSEpochDuration: "2m4.22s",
 		},
 	}

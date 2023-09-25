@@ -7,7 +7,7 @@ import (
 	"github.com/jmoiron/sqlx"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/lorawan"
 )
 
 // AddDeviceToMulticastGroup adds the given device to the given multicast-group.

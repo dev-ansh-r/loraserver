@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/lorawan"
 
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/loraserver/internal/storage"
-	"github.com/brocaar/loraserver/internal/test"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
+	"github.com/dev-ansh-r/loraserver/internal/test"
 )
 
 type EnqueueQueueItemTestCase struct {

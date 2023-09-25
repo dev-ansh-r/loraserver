@@ -2,7 +2,7 @@ syntax  = "proto3";
 
 package storage;
 
-import "github.com/brocaar/loraserver/api/common/common.proto";
+import "github.com/dev-ansh-r/loraserver/api/common/common.proto";
 
 message DeviceSessionPBChannel {
     // Frequency (Hz).

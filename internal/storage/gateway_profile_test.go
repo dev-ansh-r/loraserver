@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/brocaar/loraserver/internal/common"
-	"github.com/brocaar/loraserver/internal/test"
+	"github.com/dev-ansh-r/loraserver/internal/common"
+	"github.com/dev-ansh-r/loraserver/internal/test"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

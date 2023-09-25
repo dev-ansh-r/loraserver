@@ -6,7 +6,7 @@ package storage
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import common "github.com/brocaar/loraserver/api/common"
+import common "github.com/dev-ansh-r/loraserver/api/common"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

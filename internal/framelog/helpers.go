@@ -3,8 +3,8 @@ package framelog
 import (
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/loraserver/api/gw"
-	"github.com/brocaar/loraserver/internal/models"
+	"github.com/dev-ansh-r/loraserver/api/gw"
+	"github.com/dev-ansh-r/loraserver/internal/models"
 )
 
 // CreateUplinkFrameSet creates a UplinkFrameSet.

@@ -3,11 +3,11 @@ package maccommand
 import (
 	"fmt"
 
-	"github.com/brocaar/loraserver/api/common"
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/loraserver/internal/models"
-	"github.com/brocaar/loraserver/internal/storage"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/api/common"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/models"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
+	"github.com/dev-ansh-r/lorawan"
 	"github.com/pkg/errors"
 )
 

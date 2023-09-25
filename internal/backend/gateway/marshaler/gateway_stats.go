@@ -9,8 +9,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 
-	"github.com/brocaar/loraserver/api/common"
-	"github.com/brocaar/loraserver/api/gw"
+	"github.com/dev-ansh-r/loraserver/api/common"
+	"github.com/dev-ansh-r/loraserver/api/gw"
 )
 
 // UnmarshalGatewayStats unmarshals an GatewayStats.

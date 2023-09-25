@@ -16,10 +16,10 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	commonPB "github.com/brocaar/loraserver/api/common"
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
+	commonPB "github.com/dev-ansh-r/loraserver/api/common"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/lorawan"
+	"github.com/dev-ansh-r/lorawan/band"
 )
 
 const (

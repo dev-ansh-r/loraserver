@@ -8,8 +8,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/brocaar/loraserver/api/gw"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/api/gw"
+	"github.com/dev-ansh-r/lorawan"
 )
 
 func TestUnmarshalDownlinkTXAck(t *testing.T) {

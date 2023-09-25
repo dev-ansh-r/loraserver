@@ -14,11 +14,11 @@ import (
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/api/option"
 
-	"github.com/brocaar/loraserver/api/gw"
-	"github.com/brocaar/loraserver/internal/backend"
-	"github.com/brocaar/loraserver/internal/backend/gateway/marshaler"
-	"github.com/brocaar/loraserver/internal/helpers"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/api/gw"
+	"github.com/dev-ansh-r/loraserver/internal/backend"
+	"github.com/dev-ansh-r/loraserver/internal/backend/gateway/marshaler"
+	"github.com/dev-ansh-r/loraserver/internal/helpers"
+	"github.com/dev-ansh-r/lorawan"
 )
 
 const uplinkSubscriptionTmpl = "%s-loraserver"

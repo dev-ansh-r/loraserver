@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/brocaar/loraserver/internal/storage"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
+	"github.com/dev-ansh-r/lorawan"
 	"github.com/pkg/errors"
 
 	. "github.com/smartystreets/goconvey/convey"

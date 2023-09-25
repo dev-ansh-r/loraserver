@@ -4,7 +4,7 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	"github.com/brocaar/loraserver/api/nc"
+	"github.com/dev-ansh-r/loraserver/api/nc"
 	"github.com/golang/protobuf/ptypes/empty"
 )
 

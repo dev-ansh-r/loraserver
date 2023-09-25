@@ -3,9 +3,9 @@ package gcppubsub
 import (
 	"testing"
 
-	"github.com/brocaar/loraserver/api/gw"
-	"github.com/brocaar/loraserver/internal/backend/gateway/marshaler"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/api/gw"
+	"github.com/dev-ansh-r/loraserver/internal/backend/gateway/marshaler"
+	"github.com/dev-ansh-r/lorawan"
 	"github.com/golang/protobuf/proto"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"

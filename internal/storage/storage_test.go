@@ -3,7 +3,7 @@ package storage
 import (
 	"testing"
 
-	"github.com/brocaar/loraserver/internal/test"
+	"github.com/dev-ansh-r/loraserver/internal/test"
 	"github.com/stretchr/testify/suite"
 )
 

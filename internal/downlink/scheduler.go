@@ -7,10 +7,10 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/loraserver/internal/downlink/data"
-	"github.com/brocaar/loraserver/internal/downlink/multicast"
-	"github.com/brocaar/loraserver/internal/storage"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/downlink/data"
+	"github.com/dev-ansh-r/loraserver/internal/downlink/multicast"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
 )
 
 // DeviceQueueSchedulerLoop starts an infinit loop calling the scheduler loop for Class-B

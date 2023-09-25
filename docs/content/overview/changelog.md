@@ -44,7 +44,7 @@ LoRa Server no longer returns an error when a `fPort` greater than `224` is used
 
 ### Bugfixes
 
-* Fix init.d logrotate processing. ([#364](https://github.com/brocaar/loraserver/pull/364))
+* Fix init.d logrotate processing. ([#364](https://github.com/dev-ansh-r/loraserver/pull/364))
 
 ## v2.3.1
 
@@ -83,7 +83,7 @@ The `battery` field (`0...255`) will be removed in the next major release.
 
 The downlink scheduler parameters are now configurable. Refer to
 [Configuration](https://www.loraserver.io/loraserver/install/config/)
-documentation for more information. [#355](https://github.com/brocaar/loraserver/pull/355).
+documentation for more information. [#355](https://github.com/dev-ansh-r/loraserver/pull/355).
 
 ## v2.2.0
 
@@ -104,7 +104,7 @@ gateway (board).
 ### Bugfixes
 
 * Ignore unknown JSON fields when using the `json` marshaler.
-* Fix TX-power override for Class-B and Class-C. ([#352](https://github.com/brocaar/loraserver/issues/352))
+* Fix TX-power override for Class-B and Class-C. ([#352](https://github.com/dev-ansh-r/loraserver/issues/352))
 
 ## v2.1.0
 
@@ -139,21 +139,21 @@ based serialization.
 
 ### Bugfixes
 
-* Fix panic on empty routing-profile CA cert ([#349](https://github.com/brocaar/loraserver/issues/349))
+* Fix panic on empty routing-profile CA cert ([#349](https://github.com/dev-ansh-r/loraserver/issues/349))
 
 ## v2.0.2
 
 ### Bugfixes
 
-* Fix flush device- and service-profile cache on clean database. ([#345](https://github.com/brocaar/loraserver/issues/345))
+* Fix flush device- and service-profile cache on clean database. ([#345](https://github.com/dev-ansh-r/loraserver/issues/345))
 
 ## v2.0.1
 
 ### Bugfixes
 
-* Use `gofrs/uuid` UUID library as `satori/go.uuid` is not truly random. ([#342](https://github.com/brocaar/loraserver/pull/342))
-* Flush device- and service-profile cache when migrating from v1 to v2. ([lora-app-server#254](https://github.com/brocaar/lora-app-server/issues/254))
-* Set `board` and `antenna` on downlink. ([#341](https://github.com/brocaar/loraserver/pull/341))
+* Use `gofrs/uuid` UUID library as `satori/go.uuid` is not truly random. ([#342](https://github.com/dev-ansh-r/loraserver/pull/342))
+* Flush device- and service-profile cache when migrating from v1 to v2. ([lora-app-server#254](https://github.com/dev-ansh-r/lora-app-server/issues/254))
+* Set `board` and `antenna` on downlink. ([#341](https://github.com/dev-ansh-r/loraserver/pull/341))
 
 ## v2.0.0
 
@@ -215,7 +215,7 @@ repository for v1.x.
 
 **Bugfixes:**
 
-* Fixes an "index out of range" issue when removing conflicting mac-commands. ([#323](https://github.com/brocaar/loraserver/issues/323))
+* Fixes an "index out of range" issue when removing conflicting mac-commands. ([#323](https://github.com/dev-ansh-r/loraserver/issues/323))
 
 ## 0.26.2
 
@@ -259,7 +259,7 @@ repository for v1.x.
 
 **Bugfixes:**
 
-* Fix leaking Redis connections on pubsub subscriber ([#313](https://github.com/brocaar/loraserver/issues/313).
+* Fix leaking Redis connections on pubsub subscriber ([#313](https://github.com/dev-ansh-r/loraserver/issues/313).
 
 **Upgrade notes:**
 
@@ -291,8 +291,8 @@ of your (PostgreSQL) database.
 **Bugfixes:**
 
 * MQTT topics were hardcoded in configuration file template, this has been fixed.
-* Fix `network_contoller` -> `network_controller` typo ([#302](https://github.com/brocaar/loraserver/issues/302))
-* Fix typo in pubsub key (resulting in ugly Redis keys) ([#296](https://github.com/brocaar/loraserver/pull/296))
+* Fix `network_contoller` -> `network_controller` typo ([#302](https://github.com/dev-ansh-r/loraserver/issues/302))
+* Fix typo in pubsub key (resulting in ugly Redis keys) ([#296](https://github.com/dev-ansh-r/loraserver/pull/296))
 
 ## 0.25.0
 
@@ -338,13 +338,13 @@ of your (PostgreSQL) database.
 
 **Bugfixes:**
 
-* Fix typo in `create_gateway_on_stats` config mapping. (thanks [@mkiiskila](https://github.com/mkiiskila), [#295](https://github.com/brocaar/loraserver/pull/295))
+* Fix typo in `create_gateway_on_stats` config mapping. (thanks [@mkiiskila](https://github.com/mkiiskila), [#295](https://github.com/dev-ansh-r/loraserver/pull/295))
 
 ## 0.24.1
 
 **Bugfixes:**
 
-* Fix basing tx-power value on wrong SNR value (thanks [@x0y1z2](https://github.com/x0y1z2), [#293](https://github.com/brocaar/loraserver/issues/293))
+* Fix basing tx-power value on wrong SNR value (thanks [@x0y1z2](https://github.com/x0y1z2), [#293](https://github.com/dev-ansh-r/loraserver/issues/293))
 
 ## 0.24.0
 
@@ -354,7 +354,7 @@ of your (PostgreSQL) database.
   See [configuration](https://docs.loraserver.io/loraserver/install/config/) for more information.
 * `StreamFrameLogsForGateway` API method has been added to stream frames for a given gateway MAC.
 * `StreamFrameLogsForDevice` API method has been added to stream frames for a given DevEUI.
-* Support MQTT client certificate authentication ([#284](https://github.com/brocaar/loraserver/pull/284)).
+* Support MQTT client certificate authentication ([#284](https://github.com/dev-ansh-r/loraserver/pull/284)).
 
 **Changes:**
 
@@ -405,7 +405,7 @@ See for more information:
 * [LoRa Server configuration](https://docs.loraserver.io/loraserver/install/config/)
 * [LoRa App Server configuration](https://docs.loraserver.io/lora-app-server/install/config/)
 * [LoRa App Server network-server management](https://docs.loraserver.io/lora-app-server/use/network-servers/)
-* [https://github.com/brocaar/loraserver-certificates](https://github.com/brocaar/loraserver-certificates)
+* [https://github.com/dev-ansh-r/loraserver-certificates](https://github.com/dev-ansh-r/loraserver-certificates)
 
 ## 0.23.1
 
@@ -416,7 +416,7 @@ See for more information:
 **Bugfixes:**
 
 * Add missing `nil` pointer check for `Time`
-  ([#280](https://github.com/brocaar/loraserver/issues/280))
+  ([#280](https://github.com/dev-ansh-r/loraserver/issues/280))
 * Fix increase of NbTrans (re-transmissions) in case of early packetloss.
 * Fix decreasing NbTrans (this only happened in case of data-rate or TX
   power change).
@@ -543,7 +543,7 @@ LoRa Server first, then proceed with upgrading LoRa App Server. See also the
 
 * Remove gateway location and altitude 'nullable' option in the database.
   This removes some complexity and fixes a nil pointer issue when compiled
-  using Go < 1.8 ([#210](https://github.com/brocaar/loraserver/issues/210)).
+  using Go < 1.8 ([#210](https://github.com/dev-ansh-r/loraserver/issues/210)).
 
 * Update `AU_915_928` data-rates according to the LoRaWAN Regional Parameters
   1.0.2 specification.
@@ -643,9 +643,9 @@ documentation.
 * TTL of node-sessions in Redis is now configurable through
   `--node-session-ttl` / `NODE_SESSION_TTL` config flag.
   This makes it possible to configure the time after which a node-session
-  expires after no activity ([#100](https://github.com/brocaar/loraserver/issues/100)).
+  expires after no activity ([#100](https://github.com/dev-ansh-r/loraserver/issues/100)).
 * Relax frame-counter mode has been changed to disable frame-counter check mode
-  to deal with different devices ([#133](https://github.com/brocaar/loraserver/issues/133)).
+  to deal with different devices ([#133](https://github.com/dev-ansh-r/loraserver/issues/133)).
 
 ## 0.17.0
 
@@ -718,7 +718,7 @@ upgrading.
 
 **Changes:**
 
-* RU 864 - 869 band configuration has been updated (see [#113](https://github.com/brocaar/loraserver/issues/113))
+* RU 864 - 869 band configuration has been updated (see [#113](https://github.com/dev-ansh-r/loraserver/issues/113))
 
 ## 0.13.3
 
@@ -817,7 +817,7 @@ part of LoRa Server, but are only exposed by gRPC.
 
 ### Application-server
 
-An application-server component and [API](https://github.com/brocaar/loraserver/blob/master/api/as/as.proto)
+An application-server component and [API](https://github.com/dev-ansh-r/loraserver/blob/master/api/as/as.proto)
 was introduced to be responsible for the "inventory" part. This component is
 called by LoRa Server when a node tries to join the network, when data is
 received and to retrieve data for downlink transmissions.

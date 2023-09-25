@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/brocaar/loraserver/internal/test"
+	"github.com/dev-ansh-r/loraserver/internal/test"
 )
 
 func (ts *StorageTestSuite) TestMetrics() {

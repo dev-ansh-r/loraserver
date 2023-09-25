@@ -10,8 +10,8 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"github.com/stretchr/testify/require"
 
-	"github.com/brocaar/loraserver/api/gw"
-	"github.com/brocaar/lorawan"
+	"github.com/dev-ansh-r/loraserver/api/gw"
+	"github.com/dev-ansh-r/lorawan"
 )
 
 func TestUnmarshalGatewayStats(t *testing.T) {

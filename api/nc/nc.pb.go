@@ -6,7 +6,7 @@ package nc
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import gw "github.com/brocaar/loraserver/api/gw"
+import gw "github.com/dev-ansh-r/loraserver/api/gw"
 import empty "github.com/golang/protobuf/ptypes/empty"
 
 import (

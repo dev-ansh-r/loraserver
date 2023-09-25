@@ -6,8 +6,8 @@ package geo
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import common "github.com/brocaar/loraserver/api/common"
-import gw "github.com/brocaar/loraserver/api/gw"
+import common "github.com/dev-ansh-r/loraserver/api/common"
+import gw "github.com/dev-ansh-r/loraserver/api/gw"
 
 import (
 	context "golang.org/x/net/context"

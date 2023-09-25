@@ -3,10 +3,10 @@ package storage
 import (
 	"time"
 
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/loraserver/internal/models"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/models"
+	"github.com/dev-ansh-r/lorawan"
+	"github.com/dev-ansh-r/lorawan/band"
 	"github.com/gofrs/uuid"
 )
 
@@ -116,9 +116,9 @@ func migrateDeviceSessionOld(d DeviceSessionOld) DeviceSession {
 		RX2DR:        d.RX2DR,
 		RX2Frequency: d.RX2Frequency,
 
-		TXPowerIndex: d.TXPowerIndex,
-		DR:           d.DR,
-		ADR:          d.ADR,
+		TXPowerIndex:             d.TXPowerIndex,
+		DR:                       d.DR,
+		ADR:                      d.ADR,
 		MaxSupportedTXPowerIndex: d.MaxSupportedTXPowerIndex,
 		MaxSupportedDR:           d.MaxSupportedDR,
 		NbTrans:                  d.NbTrans,

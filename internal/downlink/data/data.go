@@ -9,17 +9,17 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/loraserver/api/gw"
-	"github.com/brocaar/loraserver/internal/adr"
-	"github.com/brocaar/loraserver/internal/channels"
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/loraserver/internal/framelog"
-	"github.com/brocaar/loraserver/internal/helpers"
-	"github.com/brocaar/loraserver/internal/maccommand"
-	"github.com/brocaar/loraserver/internal/models"
-	"github.com/brocaar/loraserver/internal/storage"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/band"
+	"github.com/dev-ansh-r/loraserver/api/gw"
+	"github.com/dev-ansh-r/loraserver/internal/adr"
+	"github.com/dev-ansh-r/loraserver/internal/channels"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/framelog"
+	"github.com/dev-ansh-r/loraserver/internal/helpers"
+	"github.com/dev-ansh-r/loraserver/internal/maccommand"
+	"github.com/dev-ansh-r/loraserver/internal/models"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
+	"github.com/dev-ansh-r/lorawan"
+	"github.com/dev-ansh-r/lorawan/band"
 )
 
 type deviceClass int

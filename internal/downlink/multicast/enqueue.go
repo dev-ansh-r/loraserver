@@ -7,10 +7,10 @@ import (
 	"github.com/jmoiron/sqlx"
 	"github.com/pkg/errors"
 
-	"github.com/brocaar/loraserver/internal/config"
-	"github.com/brocaar/loraserver/internal/downlink/data/classb"
-	"github.com/brocaar/loraserver/internal/gps"
-	"github.com/brocaar/loraserver/internal/storage"
+	"github.com/dev-ansh-r/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/downlink/data/classb"
+	"github.com/dev-ansh-r/loraserver/internal/gps"
+	"github.com/dev-ansh-r/loraserver/internal/storage"
 )
 
 // EnqueueQueueItem selects the gateways that must be used to cover all devices

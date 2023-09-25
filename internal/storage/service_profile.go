@@ -13,7 +13,7 @@ import (
 	"github.com/jmoiron/sqlx"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/brocaar/loraserver/internal/config"
+	"github.com/dev-ansh-r/loraserver/internal/config"
 )
 
 // Templates used for generating Redis keys
