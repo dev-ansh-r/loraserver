@@ -291,14 +291,14 @@ func GetRandomDevAddr(p *redis.Pool, netID lorawan.NetID) (lorawan.DevAddr, erro
 // to validate the MIC, the full 32 bit frame-counter needs to be set.
 // After a succesful validation of the FCntUp and the MIC, don't forget
 // to synchronize the Node FCntUp with the packet FCnt.
-// func ValidateAndGetFullFCntUp(s DeviceSession, fCntUp uint32) (uint32, bool) {
-// 	// we need to compare the difference of the 16 LSB
-// 	gap := uint32(uint16(fCntUp) - uint16(s.FCntUp%65536))
-// 	if gap < config.C.NetworkServer.Band.Band.MaxFCntGap{
-// 		return s.FCntUp + gap, true
-// 	}
-// 	return 0, false
-// }
+func ValidateAndGetFullFCntUp(s DeviceSession, fCntUp uint32) (uint32, bool) {
+	// we need to compare the difference of the 16 LSB
+	gap := uint32(uint16(fCntUp) - uint16(s.FCntUp%65536))
+	if gap < config.C.NetworkServer.Band.Band.MaxFCntGap{
+		return s.FCntUp + gap, true
+	}
+	return 0, false
+}
 
 // func GetFullFCntUp(nextExpectedFullFCnt, truncatedFCntUp uint32) uint32 {
 // 	// Handle re-transmission.
